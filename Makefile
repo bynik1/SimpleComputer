@@ -48,7 +48,7 @@ main_test.o: $(TEST_DIR)/main.c
 test.o: $(TEST_DIR)/test.c
 	$(CC) $(FLAGS) -I thirdparty -I src -c -o $(OBJ_TEST_DIR)/$@ $<
 
-run_test: $(EXE_DIR)/test_app
+test_run: $(EXE_DIR)/test_app
 	$(EXE_DIR)/test_app
 
 clean:
